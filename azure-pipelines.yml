@@ -27,3 +27,10 @@ jobs:
     name:  Azure Virtual Machine
     resourceType: VirtualMachine
     tags: web
+  strategy:
+    # Default deployment strategy, more coming...
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self 
+        - script: echo my first deployment
