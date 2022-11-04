@@ -33,4 +33,4 @@ jobs:
       deploy:
         steps:
         - checkout: self 
-        - script: echo my first deployment
+        - script: touch a b c d
